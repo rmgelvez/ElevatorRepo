@@ -88,6 +88,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "ElevatorCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ElevatorCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ElevatorCore.dll": {}
+        }
       }
     }
   },
@@ -216,10 +226,16 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "ElevatorCore/1.0.0": {
+      "type": "project",
+      "path": "../ElevatorCore/ElevatorCore.csproj",
+      "msbuildProject": "../ElevatorCore/ElevatorCore.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "ElevatorCore >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -255,7 +271,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\rmgel\\Desktop\\Ejercicios\\ElevatorRepo\\ElevatorCore\\ElevatorCore.csproj": {
+              "projectPath": "C:\\Users\\rmgel\\Desktop\\Ejercicios\\ElevatorRepo\\ElevatorCore\\ElevatorCore.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -4,6 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevatorControlAPI", "ElevatorControlAPI.csproj", "{5D64F7FA-66F0-42AE-93C3-4B94A7324911}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7DADB809-6B5B-4C87-BE82-68958393DF3D} = {7DADB809-6B5B-4C87-BE82-68958393DF3D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevatorCore", "..\ElevatorCore\ElevatorCore.csproj", "{7DADB809-6B5B-4C87-BE82-68958393DF3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevatorInfrastructure", "..\ElevatorInfrastructure\ElevatorInfrastructure.csproj", "{8C9D4C07-378D-4DCA-B54A-457A63F66484}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +22,14 @@ Global
 		{5D64F7FA-66F0-42AE-93C3-4B94A7324911}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D64F7FA-66F0-42AE-93C3-4B94A7324911}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D64F7FA-66F0-42AE-93C3-4B94A7324911}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DADB809-6B5B-4C87-BE82-68958393DF3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DADB809-6B5B-4C87-BE82-68958393DF3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DADB809-6B5B-4C87-BE82-68958393DF3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DADB809-6B5B-4C87-BE82-68958393DF3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C9D4C07-378D-4DCA-B54A-457A63F66484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C9D4C07-378D-4DCA-B54A-457A63F66484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C9D4C07-378D-4DCA-B54A-457A63F66484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C9D4C07-378D-4DCA-B54A-457A63F66484}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

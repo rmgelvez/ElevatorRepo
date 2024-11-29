@@ -1,0 +1,12 @@
+C:\Users\rmgel\Desktop\Ejercicios\ElevatorRepo\ElevatorCore\bin\Debug\net6.0\ElevatorCore.deps.json
+C:\Users\rmgel\Desktop\Ejercicios\ElevatorRepo\ElevatorCore\bin\Debug\net6.0\ElevatorCore.dll
+C:\Users\rmgel\Desktop\Ejercicios\ElevatorRepo\ElevatorCore\bin\Debug\net6.0\ElevatorCore.pdb
+C:\Users\rmgel\Desktop\Ejercicios\ElevatorRepo\ElevatorCore\obj\Debug\net6.0\ElevatorCore.csproj.AssemblyReference.cache
+C:\Users\rmgel\Desktop\Ejercicios\ElevatorRepo\ElevatorCore\obj\Debug\net6.0\ElevatorCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rmgel\Desktop\Ejercicios\ElevatorRepo\ElevatorCore\obj\Debug\net6.0\ElevatorCore.AssemblyInfoInputs.cache
+C:\Users\rmgel\Desktop\Ejercicios\ElevatorRepo\ElevatorCore\obj\Debug\net6.0\ElevatorCore.AssemblyInfo.cs
+C:\Users\rmgel\Desktop\Ejercicios\ElevatorRepo\ElevatorCore\obj\Debug\net6.0\ElevatorCore.csproj.CoreCompileInputs.cache
+C:\Users\rmgel\Desktop\Ejercicios\ElevatorRepo\ElevatorCore\obj\Debug\net6.0\ElevatorCore.dll
+C:\Users\rmgel\Desktop\Ejercicios\ElevatorRepo\ElevatorCore\obj\Debug\net6.0\refint\ElevatorCore.dll
+C:\Users\rmgel\Desktop\Ejercicios\ElevatorRepo\ElevatorCore\obj\Debug\net6.0\ElevatorCore.pdb
+C:\Users\rmgel\Desktop\Ejercicios\ElevatorRepo\ElevatorCore\obj\Debug\net6.0\ref\ElevatorCore.dll
