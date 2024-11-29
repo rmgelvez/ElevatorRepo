@@ -1,5 +1,6 @@
 ﻿using ElevatorCore.Entities;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace ElevatorControlAPI.Controllers
 {
@@ -17,6 +18,17 @@ namespace ElevatorControlAPI.Controllers
         [HttpGet]
         public IActionResult GetElevatorState()
         {
+            // Verifica si el ascensor todavía está en movimiento
+            if (_elevatorState.IsMoving)
+            {
+                var currentTime = DateTime.UtcNow;
+                if (currentTime >= _elevatorState.MovementEndTime)
+                {
+                    _elevatorState.IsMoving = false;
+                    _elevatorState.MovementEndTime = null; // Limpia el tiempo de movimiento
+                }
+            }
+
             return Ok(_elevatorState);
         }
 
@@ -29,8 +41,15 @@ namespace ElevatorControlAPI.Controllers
             if (floor < 0)
                 return BadRequest(new { message = "El piso no puede ser negativo." });
 
-            _elevatorState.CurrentFloor = floor;
-            return Ok(new { message = $"Ascensor llamado al piso {floor}" });
+            // Calcula el tiempo necesario para llegar al piso
+            int floorsToMove = Math.Abs(_elevatorState.CurrentFloor - floor);
+            int movementTimeSeconds = floorsToMove * 2;
+
+            _elevatorState.IsMoving = true;
+            _elevatorState.CurrentFloor = floor; // Actualiza el destino
+            _elevatorState.MovementEndTime = DateTime.UtcNow.AddSeconds(movementTimeSeconds);
+
+            return Ok(new { message = $"Ascensor llamado al piso {floor}. Tiempo estimado: {movementTimeSeconds} segundos." });
         }
 
         [HttpPost("doors/open")]
@@ -76,6 +95,7 @@ namespace ElevatorControlAPI.Controllers
                 return BadRequest(new { message = "El ascensor ya está detenido." });
 
             _elevatorState.IsMoving = false;
+            _elevatorState.MovementEndTime = null; // Limpia el tiempo de movimiento
             return Ok(new { message = "El ascensor se ha detenido." });
         }
     }

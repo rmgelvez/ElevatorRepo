@@ -11,6 +11,8 @@ namespace ElevatorCore.Entities
         public int CurrentFloor { get; set; } = 0;
         public bool IsMoving { get; set; } = false;
         public bool DoorsOpen { get; set; } = false;
+        public DateTime? MovementEndTime { get; set; } = null;
+
     }
 
 }
