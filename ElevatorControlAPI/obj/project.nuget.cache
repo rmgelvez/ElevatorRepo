@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "P73w16W43dJ5i38nzLjGyOTYiYo+fv1CzBN7pmqbkshn7mCq7Z26oO4LJHnAfrqJiX2R77fM+GBQyKrk4S+ubg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rmgel\\Desktop\\Ejercicios\\ElevatorRepo\\ElevatorControlAPI\\ElevatorControlAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rmgel\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\rmgel\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\rmgel\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\rmgel\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\rmgel\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\rmgel\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
