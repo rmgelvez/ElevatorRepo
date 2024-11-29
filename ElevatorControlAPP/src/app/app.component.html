@@ -333,4 +333,23 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
+<div class="container">
+  <h1>Control de Ascensor</h1>
+  <div>
+    <p><strong>Piso Actual:</strong> {{ elevatorState?.currentFloor }}</p>
+    <p><strong>En Movimiento:</strong> {{ elevatorState?.isMoving ? 'Sí' : 'No' }}</p>
+    <p><strong>Puertas Abiertas:</strong> {{ elevatorState?.doorsOpen ? 'Sí' : 'No' }}</p>
+  </div>
+
+  <div class="controls">
+    <button (click)="callElevator()">Llamar Ascensor</button>
+    <button (click)="openDoors()">Abrir Puertas</button>
+    <button (click)="closeDoors()">Cerrar Puertas</button>
+    <button (click)="startElevator()">Iniciar</button>
+    <button (click)="stopElevator()">Detener</button>
+  </div>
+</div>
+
+
+
 <router-outlet />

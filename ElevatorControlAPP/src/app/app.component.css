@@ -1,0 +1,10 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .controls button {
+    margin: 5px;
+    padding: 10px 20px;
+  }
+  

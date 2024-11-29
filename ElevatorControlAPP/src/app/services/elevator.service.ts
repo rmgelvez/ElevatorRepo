@@ -8,15 +8,15 @@
 //   constructor() { }
 // }
 
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ElevatorService {
-  private apiUrl = 'https://localhost:5001/api/elevator'; // URL del backend
+  private apiUrl = 'https://localhost:44319/api/elevator'; // URL del backend
 
   constructor(private http: HttpClient) {}
 
