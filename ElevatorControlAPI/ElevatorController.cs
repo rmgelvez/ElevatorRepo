@@ -41,6 +41,9 @@ namespace ElevatorControlAPI.Controllers
             if (floor < 0)
                 return BadRequest(new { message = "El piso no puede ser negativo." });
 
+            if(_elevatorState.DoorsOpen)
+                return BadRequest(new { message = "Debes cerrar las puestas antes de iniciar el recorrido" });
+
             // Calcula el tiempo necesario para llegar al piso
             int floorsToMove = Math.Abs(_elevatorState.CurrentFloor - floor);
             int movementTimeSeconds = floorsToMove * 2;
